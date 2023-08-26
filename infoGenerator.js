@@ -1,26 +1,3 @@
-
-/*
-var unorderedList = document.createElement("ul");
-var listItem = document.createElement("li");
-var article = document.createElement("article");
-var header = document.createElement("h2");
-var p = document.createElement("p");
-
-header.appendChild(document.createTextNode("Testing"));
-p.appendChild(document.createTextNode("Testindfsdf fsd fsf sdf sdfsd  fsdffsdfsdsdfdfssdfdfdfssdfsdfsdfg"));
-
-article.appendChild(header);
-article.appendChild(p);
-
-listItem.appendChild(article);
-unorderedList.appendChild(listItem);
-var main = document.getElementById("aboutMe");
-console.log(main);
-main.appendChild(unorderedList);
-*/
-
-
-
 function createListItem (id, linkOrArticle, header, paragraphs, images, videos) {
         console.log("done");
 
