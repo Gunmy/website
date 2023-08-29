@@ -130,7 +130,7 @@ section > ul > li > article, section > ul > li > a  {
     max-width: 100%;
 }
 
-img, video {
+img, video, iframe {
     width: 100%;
     border-radius: 3px;
     max-width: 500px;
@@ -183,12 +183,13 @@ section > ul > li > a > p {
     color: var(--black);
 }
 
-section > ul > li > a > img, section > ul > li > a > video {
+section > ul > li > a > img, section > ul > li > a > video, section > ul > li > a > iframe {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    border: none;
 }
 
-section > ul > li > a:hover > img, section > ul > li > a:hover > video {
+section > ul > li > a:hover > img, section > ul > li > a:hover > video, section > ul > li > a:hover > iframe {
     -webkit-filter: grayscale(100%);
     filter: grayscale(0%);
 }

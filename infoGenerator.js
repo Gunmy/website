@@ -1,4 +1,4 @@
-function createListItem (id, linkOrArticle, header, paragraphs, images, videos) {
+function createListItem (id, linkOrArticle, header, paragraphs, images, videos, iframes) {
         console.log("done");
 
    
@@ -39,6 +39,15 @@ function createListItem (id, linkOrArticle, header, paragraphs, images, videos) 
         var vid = document.createElement("video");
         vid.src = video;
         vid.controls = true;
+
+        container.appendChild(vid);
+    }
+
+    for (const iframe of iframes) {
+        var vid = document.createElement("iframe");
+        vid.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen')
+        vid.src = iframe;
+
         container.appendChild(vid);
     }
 }   
