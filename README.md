@@ -1,2 +1,6 @@
-# Nettside for å presentere prosjekter
-![bilde av nettsiden](https://github.com/Gunmy/website/blob/main/projects/thisWebsite/thumbnail.png)
+# Website
+This is a website created to showcase my projects. Its created from scratch using html, css and javascript.
+
+|<img width="943" alt="image" src="https://github.com/Gunmy/website/assets/99408493/48a6aef5-b51e-42cf-9198-e4ca7aa12fcb">|
+|:--:|
+|Figure 1: Image of website|
