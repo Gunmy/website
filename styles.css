@@ -113,11 +113,11 @@ section > ul {
     row-gap: 20px;
 }
 
-#aboutMe {
+#aboutMe > ul {
     justify-content: space-between;
 }
 
-#projects {
+#projects > ul {
     justify-content: space-around;
 }
 
