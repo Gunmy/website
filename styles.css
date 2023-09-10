@@ -274,6 +274,7 @@ hr {
         text-align: center;
         color: var(--white);
         font-size: 15px;    
+        width: 100%;
     }
 
     nav > ul > li {
