@@ -282,6 +282,12 @@ hr {
         width: 100%;
     }
 
+    nav > ul > li > a:hover {
+        color: var(--black);
+        text-decoration: underline;
+        background-color: var(--white);
+    }
+
     nav > ul > li {
         width: 25%;
     }
