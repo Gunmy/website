@@ -109,9 +109,16 @@ section > ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     column-gap: 20px;
     row-gap: 20px;
+}
+
+#aboutMe {
+    justify-content: space-between;
+}
+
+#projects {
+    justify-content: space-around;
 }
 
 section > ul > li {
