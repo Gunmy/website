@@ -255,3 +255,11 @@ hr {
     max-width: 43%;
     width: 43%;
 }
+
+
+@media (max-width: 600px) {
+    .halfMax {
+        max-width: 100%;
+        width: 100%;
+    }
+}
