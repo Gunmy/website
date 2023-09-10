@@ -264,4 +264,17 @@ hr {
         max-width: 100%;
         width: 100%;
     }
+
+    nav > ul > li > a {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: var(--buttonHighlight);
+        text-align: center;
+        color: var(--white);
+        font-size: 15px;
+        width: 25%;
+    
+    }
 }
