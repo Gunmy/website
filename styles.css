@@ -273,8 +273,11 @@ hr {
         background-color: var(--buttonHighlight);
         text-align: center;
         color: var(--white);
-        font-size: 15px;
-        width: 25%;
-    
+        font-size: 15px;    
     }
+
+    nav > ul > li {
+        width: 25%;
+    }
+
 }
