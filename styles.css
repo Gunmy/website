@@ -27,7 +27,7 @@
 */
 
 * {
-    margin: auto;
+    margin: 0;
     padding: 0;
     width: auto;
     color: var(--black);
@@ -35,13 +35,14 @@
     border-radius: 0;
     text-decoration: none;
     transition-duration: 0.15s;
+    font-size: 12px;
 }
 
 body {
     background-color: var(--main-bg-color);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     row-gap: 30px;
 
@@ -86,6 +87,8 @@ nav > ul > li > a {
     background-color: var(--buttonHighlight);
     text-align: center;
     color: var(--white);
+    font-size: 15px;
+
 }
 
 nav > ul > li > a:hover {
@@ -94,11 +97,13 @@ nav > ul > li > a:hover {
     background-color: var(--white);
 }
 
-
+section {
+    width: 90%;
+}
 
 
 section > ul {
-    width: 90%;
+    width: 100%;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -111,13 +116,15 @@ section > ul > li {
     background-color: var(--secondary-bg-color);    
     border-radius: 3px;
     box-shadow: 5px 8px var(--shadow);
+    padding: 13px;
+    align-self: start;
 }
 
 section > ul > li > article, section > ul > li > a  {
     max-width: 300px;
+    width: 100%;
     background-color: var(--text-bg-color);
     border-radius: 3px;
-    padding: 13px;
     column-gap: 10px;
     row-gap: 10px;
     display: flex;
@@ -126,9 +133,6 @@ section > ul > li > article, section > ul > li > a  {
 
 }
 
-.noMax {
-    max-width: 100%;
-}
 
 img, video, iframe {
     width: 100%;
@@ -151,10 +155,14 @@ h2 {
 
     padding: 30px;
 
-    font-size: 31;
+    font-size: 25px;
 
 
 
+}
+
+h3 {
+    font-size: 19px;
 }
 
 section > ul > li > article > h3, section > ul > li > a > h3 {
@@ -165,17 +173,17 @@ section > ul > li > article > h3, section > ul > li > a > h3 {
 
 }
 
-section > ul > li > a:hover {
+#projects > ul > li:hover > a, #projects > ul > li:hover {
     background-color: var(--footer-bg);
 }
 
-section > ul > li > a:hover > h3 {
-    font-size: 19px;
+
+#projects > ul > li:hover > a > h3 {
     color: var(--white);
     border-bottom: 3px dotted var(--white);
 }
 
-section > ul > li > a:hover > p {
+#projects > ul > li:hover > a > p {
     color: var(--white);
 }
 
@@ -189,7 +197,7 @@ section > ul > li > a > img, section > ul > li > a > video, section > ul > li > 
     border: none;
 }
 
-section > ul > li > a:hover > img, section > ul > li > a:hover > video, section > ul > li > a:hover > iframe {
+#projects > ul > li:hover > a > img, #projects > ul > li:hover > a > video, #projects > ul > li:hover > a > iframe {
     -webkit-filter: grayscale(100%);
     filter: grayscale(0%);
 }
@@ -228,6 +236,7 @@ h1 {
     color: var(--white);
     width: 100%;
     text-align: center;
+    font-size: 30px;
 }
 
 hr {
@@ -235,4 +244,14 @@ hr {
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+
+.noMax {
+    max-width: 100%;
+}
+
+.halfMax {
+    max-width: 43%;
+    width: 43%;
 }
