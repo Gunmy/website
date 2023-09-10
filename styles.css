@@ -260,7 +260,7 @@ hr {
 
 
 @media (max-width: 600px) {
-    .halfMax {
+    section > ul > li {
         max-width: 100%;
         width: 100%;
     }
