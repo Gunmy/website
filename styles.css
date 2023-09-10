@@ -260,7 +260,7 @@ hr {
 
 
 @media (max-width: 600px) {
-    section > ul > li {
+    section > ul > li, section > ul > li > a, section > ul > li > article {
         max-width: 100%;
         width: 100%;
     }
