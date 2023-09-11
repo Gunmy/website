@@ -287,12 +287,13 @@ hr {
         color: var(--white);
         font-size: 15px;    
         width: 100%;
+        font-weight: normal;
+
     }
 
     nav > ul > li > a:hover {
-        color: var(--black);
         text-decoration: underline;
-        background-color: var(--white);
+        font-weight: bold;
     }
 
     nav > ul > li {
