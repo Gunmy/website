@@ -294,6 +294,8 @@ hr {
     nav > ul > li > a:hover {
         text-decoration: underline;
         font-weight: bold;
+        background-color: var(--buttonHighlight);
+        color: var(--white)
     }
 
     nav > ul > li {
