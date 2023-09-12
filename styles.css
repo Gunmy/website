@@ -265,6 +265,10 @@ hr {
     width: 43%;
 }
 
+ul > li > ul {
+    margin-left: 10px;
+}
+
 
 @media (max-width: 700px) {
     section > ul > li, section > ul > li > a, section > ul > li > article {
