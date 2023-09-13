@@ -270,7 +270,7 @@ ul > li > ul {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     section > ul > li, section > ul > li > a, section > ul > li > article {
         max-width: 100%;
         width: 100%;
