@@ -49,6 +49,10 @@ body {
     
 }
 
+a {
+    color: var(--buttonHighlight);
+}
+
 nav {
     width: 100%;
     background-color: var(--buttonHighlight);
