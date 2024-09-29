@@ -9,23 +9,6 @@
   --footer-bg: #67B05E;
 }
 
-
-/*
-  --main-bg-color: #176B87;
-  --secondary-bg-color: #64CCC5;
-  --text-bg-color: #DAFFFB;
-  --black: #001C30;
-
-
-    --main-bg-color: #202124; 
-  --shadow: #000000;
-  --secondary-bg-color: #40C6DF;
-  --text-bg-color: #202124;
-  --black: #1B1C1E;
-  --white: #DAFFFB;
-  --buttonHighlight: #40C6DF;
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -44,10 +27,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    row-gap: 30px;
+    row-gap: 3rem;
+    padding-bottom: 4rem;
 
-    
 }
+
 
 a {
     color: var(--buttonHighlight);
@@ -56,8 +40,8 @@ a {
 nav {
     width: 100%;
     background-color: var(--buttonHighlight);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     position: fixed;
     bottom: 0;
     z-index: 99999999999999999999999999999999999999999999999999999999999;
@@ -74,7 +58,7 @@ nav > ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 2rem;
 
 
 }
@@ -86,14 +70,14 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--buttonHighlight);
     text-align: center;
     color: var(--white);
-    font-size: 15px;
+    font-size: 1rem;
 
 }
 
@@ -113,8 +97,8 @@ section > ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 #aboutMe > ul {
@@ -127,19 +111,19 @@ section > ul {
 
 section > ul > li {
     background-color: var(--secondary-bg-color);    
-    border-radius: 3px;
-    box-shadow: 5px 8px var(--shadow);
-    padding: 13px;
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.5rem var(--shadow);
+    padding: 1rem;
     align-self: start;
 }
 
 section > ul > li > article, section > ul > li > a  {
-    max-width: 300px;
+    max-width: 25rem;
     width: 100%;
     background-color: var(--text-bg-color);
-    border-radius: 3px;
-    column-gap: 10px;
-    row-gap: 10px;
+    border-radius:  0.3rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
     display: flex;
     flex-wrap: wrap;
 
@@ -149,13 +133,13 @@ section > ul > li > article, section > ul > li > a  {
 
 img, video, iframe {
     width: 100%;
-    border-radius: 3px;
-    max-width: 500px;
+    border-radius: 0.3rem;
+    max-width: 45rem;
 }
 
 article > ul > li {
-    margin-left: 20px;
-    font-size: 12px;
+    margin-left: 2rem;
+    font-size: 1rem;
 }
 article > ul {
     width: 100%;
@@ -166,22 +150,22 @@ h2 {
     text-align: center;
     color: var(--buttonHighlight);
 
-    padding: 30px;
+    padding: 2rem;
 
-    font-size: 25px;
+    font-size: 2rem;
 
 
 
 }
 
 h3 {
-    font-size: 19px;
+    font-size: 2rem;
 }
 
 section > ul > li > article > h3, section > ul > li > a > h3 {
-    font-size: 19px;
+    font-size: 1.6rem;
     color: var(--black);
-    border-bottom: 3px dotted var(--footer-bg);
+    border-bottom: 0.3rem dotted var(--footer-bg);
     width: 100%;
 
 }
@@ -193,7 +177,7 @@ section > ul > li > article > h3, section > ul > li > a > h3 {
 
 #projects > ul > li:hover > a > h3 {
     color: var(--white);
-    border-bottom: 3px dotted var(--white);
+    border-bottom: 0.3rem dotted var(--white);
 }
 
 #projects > ul > li:hover > a > p {
@@ -217,7 +201,7 @@ section > ul > li > a > img, section > ul > li > a > video, section > ul > li > 
 
 
 p {
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 
@@ -226,10 +210,14 @@ footer {
     width: 100%;
     background-color: var(--footer-bg);
     color:var(--white);
-    padding-bottom: 100px;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 10px;
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
 }
 
 header {
@@ -237,7 +225,7 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 
 }
 
