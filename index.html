@@ -1,45 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>CV</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
     <header id="top">
-        <h1></h1>
+      <h1></h1>
     </header>
 
-    <hr>
+    <hr />
 
     <nav id="navBar">
-        <ul>
-            <li><a href="#top">Til toppen</a></li>
-            <li><a href="#projects">Prosjekter</a></li>
-            <li><a href="https://github.com/Gunmy">Til github</a></li>
-        </ul>
+      <ul>
+        <li><a href="#top">Til toppen</a></li>
+        <li><a href="#projects">Prosjekter</a></li>
+        <li><a href="https://github.com/Gunmy">Til github</a></li>
+      </ul>
     </nav>
-    <section id ="projects">
-        <h2>Noen prosjekter</h2>
+    <section id="projects">
+      <h2>Noen prosjekter</h2>
 
-        <ul></ul>
+      <ul></ul>
     </section>
-
 
     <script src="infoGenerator.js"></script>
 
     <script>
-        createListItem("projects", "https://github.com/Gunmy/website.git", "Denne nettsiden (Høst 2023)", ["Denne nettsiden ble laget for å vise kompetansen min innenfor webhosting, JavaScript, CSS, HTML, og design, samt å vise prosjektene mine på en måte som andre tjenester ikke kan. Klikk for å gå til kildekode."], ["projects/thisWebsite/thumbnail.png"], [], []);
-        createListItem("projects", "https://github.com/Gunmy/GemstoneGuardian", "Gemstone Guardian (Vår 2023)", ["Gemstone Guardians er et pokemon-inspirert spill som jeg lagde som prosjekt i Objektorientert programmering. Prosjektet har objektorientert struktur, benytter JavaFX, og har over 30 filer og flere tusen linjer med kode. Spillet tar ca. 40 minutter å spille igjennom. Klikk for å gå til kildekode."], ["projects/gemstoneGuardians/thumbnail.png"], [], []);
-        createListItem("projects", "projects/rpg/game.html", "rpgGame (Vår 2022)", ["Role Playing Game (RPG) er et prosjekt laget i ren JavaScript (og HTML) ved hjelp av canvas-elementet og påbegynt på videregående for å øve til privatisteksamen i informasjonsteknologi 2. Klikk for å gå til kildekode."], ["projects/rpg/thumbnail.png"], [], []);
-        createListItem("projects", "https://github.com/raSKTypeShit/callforduty", "Call For Duty (Vår 2022)", ["Call For Duty er et gruppeprosjekt laget i informasjonsteknologi 1 i PHP og CSS. Det er et jobbannonseforum. En kan opprette jobbanonnser med egne forms, som andre så kan svare på. Alt blir lagret i en SQL-database slik at jobbutlyseren kan se en statistikk over svarene til alle kandidatene. I tillegg kan utlyseren se en overordnet statistikk over svar, for eksempel i form av et kakediagram. Klikk for å gå til kildekode."], ["projects/callForDuty/thumbnail.png"], [], []);
-        createListItem("projects", "https://github.com/Gunmy/MiningGame", "Mining Game (Høst 2020)", ["Mining Game er et spill jeg lagde etter å ha lært python i noen uker. Spillet benytter pygame-biblioteket. Man kan grave, bygge og lage ulike maskiner. Senere brukte jeg det jeg lærte til å lage en bedre versjon, med flere funksjoner. Klikk for å gå til kildekode."], ["projects/diggingGame/thumbnail.png"], [], []);
-        createListItem("projects", "https://github.com/Gunmy/ShaderGenerator", "Shader Generator (Vår 2023)", ["Dette var et prosjekt hvor jeg lærte meg å lese bildefilers data, hente ut pikselinformasjon, for å igjen benytte dette til å overlappe ulike shader-texturer. Senere brukte jeg denne generatoren i 'Gemstone Guardians'. Klikk her for å gå til kildekode."], [], [], []);
+      createListItem(
+        "projects",
+        "missingGit.html",
+        "Cinematrix (Vår 2024)",
+        [
+          "Bygd med: NextJS, TailwindCSS, Firebase",
+          "Type: Gruppeprosjekt",
+          "En IMDB-inspirert nettside som foreslår filmer basert de du liker. Det er en fullstack web applikasjon som bruker NextJS som rammeverk. Firebase blir benyttet som database, og består av blant annet filmer, skuespillere og informasjon om brukerne av nettsiden. TailwindCSS ble brukt for å style applikasjonen basert på et design vi hadde laget i figma. Under utviklingen fulgte vi Scrum rammeverket for smidig utvikling.",
+        ],
+        ["projects/cinematrix/thumbnail.png"],
+        [],
+        []
+      );
 
+      createListItem(
+        "projects",
+        "missingGit.html",
+        "Whirlwind (September 2024)",
+        [
+          "Bygd med: React med TypeScript, Vite, TanStack ",
+          "Type: Gruppeprosjekt",
+          "En vær-applikasjon huset på en Virtual Machine. Applikasjonen benytter MET sitt Rest API for å hente værdata, og TanStack for å cache dataen. Vi brukte Vitest med Jest for å teste applikasjonen",
+        ],
+        ["projects/whirlwind/thumbnail.png"],
+        [],
+        []
+      );
+
+      createListItem(
+        "projects",
+        "https://github.com/Gunmy/website.git",
+        "Denne nettsiden (Høst 2023)",
+        [
+          "Bygd med: HTML/CSS, JavaScript",
+          "Type: Soloprosjekt",
+          "Denne nettsiden ble laget for å vise kompetansen min innenfor webhosting, JavaScript, CSS, HTML, og design, samt å vise prosjektene mine på en måte som andre tjenester ikke kan",
+          "Klikk for å gå til kildekode.",
+        ],
+        ["projects/thisWebsite/thumbnail.png"],
+        [],
+        []
+      );
+      createListItem(
+        "projects",
+        "https://github.com/raSKTypeShit/callforduty",
+        "Call For Duty (Vår 2022)",
+        [
+          "Bygd med: PHP, SQL, JavaScript, HTML/CSS",
+          "Type: Gruppeprosjekt",
+          "Call For Duty er et jobbannonseforum. En kan opprette jobbanonnser med egne forms som andre så kan svare på. Alt blir lagret i en SQL-database slik at jobbutlyseren kan se en statistikk over svarene til alle kandidatene. I tillegg kan utlyseren se en overordnet statistikk over svar, for eksempel i form av et kakediagram",
+          "Klikk for å gå til kildekode.",
+        ],
+        ["projects/callForDuty/thumbnail.png"],
+        [],
+        []
+      );
+      createListItem(
+        "projects",
+        "https://github.com/Gunmy/GemstoneGuardian",
+        "Gemstone Guardian (Vår 2023)",
+        [
+          "Bygd med: Java, JavaFX",
+          "Type: Soloprosjekt",
+          "Gemstone Guardians er et pokemon-inspirert spill som er inspirert av de gamle Pokémon klassikerne. Prosjektet er rimelig stort; over 30 filer og flere tusen linjer med kode. Spillet tar ca. 1 time å spille igjennom",
+          "Klikk for å gå til kildekode.",
+        ],
+        ["projects/gemstoneGuardians/thumbnail.png"],
+        [],
+        []
+      );
+
+      createListItem(
+        "projects",
+        "missingGit.html",
+        "Chore manager (Høst 2023)",
+        [
+          "Bygd med: Java, JavaFX, Springboot, Junit",
+          "Type: Gruppeprosjekt",
+          "En gjøremålshåndterings-applikasjon for kollektiv. Prosjektet følger Model-View-Controller (MVC) prinsippet. Gjøremål lagres til et Springboot REST API og JUnit benyttes for å teste applikasjonen.",
+        ],
+        ["projects/choremanager/thumbnail.png"],
+        [],
+        []
+      );
+
+      createListItem(
+        "projects",
+        "projects/rpg/game.html",
+        "rpgGame (Vår 2022)",
+        [
+          "Bygd med: HTML (Canvas), JavaScript",
+          "Type: Soloprosjekt",
+          "Role Playing Game (RPG) er et prosjekt laget i ren JavaScript (og HTML) ved hjelp av canvas-elementet og påbegynt på videregående for å øve til privatisteksamen i informasjonsteknologi 2.",
+          "Klikk for å prøve spillet.",
+        ],
+        ["projects/rpg/thumbnail.png"],
+        [],
+        []
+      );
+      createListItem(
+        "projects",
+        "https://github.com/Gunmy/MiningGame",
+        "Mining Game (Høst 2020)",
+        [
+          "Bygd med: Python, Pygame",
+          "Type: Soloprosjekt",
+          "Mining Game er et spill jeg lagde etter å ha lært python i noen uker. Spillet benytter pygame-biblioteket. Man kan grave, bygge og konstruere ulike maskiner. Senere brukte jeg det jeg lærte til å lage en bedre versjon, med flere funksjoner.",
+          "Klikk for å gå til kildekode.",
+        ],
+        ["projects/diggingGame/thumbnail.png"],
+        [],
+        []
+      );
+      createListItem(
+        "projects",
+        "https://github.com/Gunmy/ShaderGenerator",
+        "Shader Generator (Vår 2023)",
+        [
+          "Bygd med: Java, JavaFX",
+          "Type: Soloprosjekt",
+          "Dette var et prosjekt hvor jeg lærte meg å lese bildefilers data, hente ut pikselinformasjon, for å igjen benytte dette til å overlappe ulike shader-texturer. Senere brukte jeg denne generatoren i 'Gemstone Guardians'.",
+          "Klikk her for å gå til kildekode.",
+        ],
+        ["projects/shaderGenerator/thumbnail.png"],
+        [],
+        []
+      );
     </script>
-
-    
-
-</body>
+  </body>
 </html>

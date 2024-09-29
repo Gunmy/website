@@ -126,6 +126,7 @@ section > ul > li > article, section > ul > li > a  {
     row-gap: 1rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 
 }
@@ -262,7 +263,7 @@ ul > li > ul {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 43rem) {
     section > ul > li, section > ul > li > a, section > ul > li > article {
         max-width: 100%;
         width: 100%;
@@ -276,12 +277,12 @@ ul > li > ul {
     nav > ul > li > a {
         padding-left: 0;
         padding-right: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         background-color: var(--buttonHighlight);
         text-align: center;
         color: var(--white);
-        font-size: 15px;    
+        font-size: 1rem;    
         width: 100%;
         font-weight: normal;
 
