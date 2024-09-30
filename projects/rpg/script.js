@@ -138,7 +138,10 @@ class chunk {
                     this.tiles = structureDictionary[chunkTypeDictionary[this.type].structures[n]].addStructure(this.tiles);
                     console.log(chunkTypeDictionary[this.type].structures[n]);
                     if (chunkTypeDictionary[this.type].structures[n] == 8) {
-                        entitiesList.push(new camper(0, 900, this.x+0.5, this.y+0.5, 100, 100, 0.05, 0.1, 1, ["Sexy", "Lazy", "Racist"][floor(random()*3)] + " Camper", [0, 0, 0]));
+                        entitiesList.push(new camper(0, 900, this.x+0.5, this.y+0.5, 100, 100, 0.05, 0.1, 1, ["Uncool", "Lazy", "Silly"][floor(random()*3)] + " Camper", [0, 0, 0]));
+                        //costumeX, costumeY, x, y, width, height, sizeRadius, speed, trackingRange, name
+                    } if (chunkTypeDictionary[this.type].structures[n] == 10) {
+                        entitiesList.push(new skeleton(this.x+0.5, this.y+0.5));
                         //costumeX, costumeY, x, y, width, height, sizeRadius, speed, trackingRange, name
                     }
                     
@@ -171,7 +174,7 @@ class chunk {
                 && ((y * (j-1) * tilePixelHeight < HEIGHT || y * (j-1) * tilePixelHeight > 0) || (y * j * tilePixelHeight < HEIGHT || y * j * tilePixelHeight > 0))
                 ) {
 
-                //Sends the information of 3 tiles next to it (L-shape) to the tile,
+                //Sends the information of 3 tiles next to it (L-shape) to the tile,w
                 //so that it can draw borders
                 let surroundings = {};
                 for (let k = 0; k < patternX.length; k++) {
@@ -400,10 +403,15 @@ class playerClass {
     }
 
     get shatter () {
-        let max = 2;
+        let max = 3;
         for (let i = 0; i < max; i++) {
             for (let j = 0; j < max; j++) {
-                particlesListBehind.push(new imageParticle(this.x+(1/max*i-0.5)/chunkWidth, this.y+(1/max*j-0.5)/chunkHeight, this.animations[this.state][0]+this.animationOffset[0], this.animations[this.state][1]+this.animationOffset[1], this.width/max, this.height/max, 1/max, 1/max,
+                particlesListBehind.push(new imageParticle(
+                    this.x+(1/max*i-0.5)/chunkWidth, 
+                    this.y+(1/max*j-0.5)/chunkHeight, 
+                    500+this.width*(1/max*i), 
+                    0+this.height*(1/max*j), 
+                    this.width/max, this.height/max, 1/max, 1/max,
                     5, 0.1+0.3*random(), negPos(), 1, 1));
             }
         }
@@ -500,8 +508,8 @@ class playerClass {
     
                 let futureChunk = [floor(futureX), floor(futureY)];
                 let futureTile = [xTile, yTile];
-    
-                if (tilesDictionary[map[futureChunk].tiles[futureTile]].level > 1) {
+                
+                if (!tilesDictionary[map[futureChunk].tiles[futureTile]] || tilesDictionary[map[futureChunk].tiles[futureTile]].level > 1) {
                     ok = false;
                     break;
                 }
