@@ -507,6 +507,7 @@ class playerClass {
                 }
     
                 let futureChunk = [floor(futureX), floor(futureY)];
+                let futureChunk2 = [floor(futureX), floor(futureY)];
                 let futureTile = [xTile, yTile];
                 
                 if (!tilesDictionary[map[futureChunk].tiles[futureTile]] || tilesDictionary[map[futureChunk].tiles[futureTile]].level > 1) {
@@ -565,7 +566,7 @@ class playerClass {
 
         let tempX = -this.halfWidth*tilePixelWidth;
 
-        let tempY1 = -this.halfHeight*tilePixelWidth;
+        let tempY1 = (-this.halfHeight)*tilePixelWidth;
         let tempY = tempY1*(1-0.1*this.sinFunction);
         let tempWidth = tilePixelWidth*(1-0.05*this.cosFunction);
 

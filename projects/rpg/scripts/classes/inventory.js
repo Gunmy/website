@@ -348,11 +348,10 @@ class baseModule {
 
     get placeItem () {
         if (this.mouseInsideModule) {
-            console.log("frick");
             let side = this.width / this.columnCount;
             for (let i = 0; i < this.content.length; i++) {
                 if (this.content[i].mouseInContainer(this.x+side*i-hMONIN(this.columnCount, i)*this.columnCount*side, this.y+side*hMONIN(this.columnCount, i)+this.textOffset, side, side)) {
-                    console.log("fuck");
+
                     this.content[i].placeItem;
                 }
             }
@@ -389,11 +388,9 @@ class inventoryModule extends baseModule {
 
     get mouseInteractClick () {
         if (this.mouseInsideModule) {
-            console.log("frick");
             let side = this.width / this.columnCount;
             for (let i = 0; i < this.content.length; i++) {
                 if (this.content[i].mouseInContainer(this.x+side*i-hMONIN(this.columnCount, i)*this.columnCount*side, this.y+side*hMONIN(this.columnCount, i)+this.textOffset, side, side)) {
-                    console.log("fuck");
                     this.content[i].interactionWithMouseClick;
                 }
             }
@@ -476,11 +473,9 @@ class equipmentModule extends baseModule {
 
     get mouseInteractClick () {
         if (this.mouseInsideModule) {
-            console.log("frick");
             let side = this.width / this.columnCount;
             for (let i = 0; i < this.content.length; i++) {
                 if (this.content[i].mouseInContainer(this.x+side*i-hMONIN(this.columnCount, i)*this.columnCount*side, this.y+side*hMONIN(this.columnCount, i)+this.textOffset, side, side)) {
-                    console.log("fuck");
                     this.content[i].interactionWithMouseClick;
                 }
             }
@@ -585,11 +580,9 @@ class craftingModule extends baseModule {
 
     get placeItem () {
         if (this.mouseInsideModule) {
-            console.log("frick");
             let side = this.width / this.columnCount;
             for (let i = 0; i < this.content.length; i++) {
                 if (this.content[i].mouseInContainer(this.x+side*i-hMONIN(this.columnCount, i)*this.columnCount*side, this.y+side*hMONIN(this.columnCount, i)+this.textOffset, side, side)) {
-                    console.log("fuck");
                     this.content[i].placeItem;
                 }
             }
@@ -601,7 +594,6 @@ class craftingModule extends baseModule {
 
     get mouseInteractClick () {
         if (this.mouseInsideModule) {
-            console.log("frick");
             let side = this.width / this.columnCount;
             for (let i = 0; i < this.content.length; i++) {
                 if (this.content[i].mouseInContainer(this.x+side*i-hMONIN(this.columnCount, i)*this.columnCount*side, this.y+side*hMONIN(this.columnCount, i)+this.textOffset, side, side)) {
