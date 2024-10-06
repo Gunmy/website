@@ -325,3 +325,69 @@ main {
     }
 
 }
+
+form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 50rem;
+}
+
+
+.formItem {
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+
+select {
+    border-radius: 2rem;
+    border: 0;
+    padding: 0.3rem;
+    background: var(--shadow);
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: var(--shadow);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 2rem; 
+
+  }
+  
+  .slider:hover {
+    opacity: 1;
+    
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--footer-bg);
+    cursor: pointer;
+    border-radius: 2rem; 
+
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--footer-bg);
+    cursor: pointer;
+    border-radius: 2rem; 
+
+  }
+
+  #survival_chance {
+    font-size: 3rem;
+  }
+

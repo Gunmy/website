@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas test</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../styles.css" />
+  </head>
+  <body>
+    <header id="top">
+      <h1>Would you have survived Titanic?</h1>
+    </header>
+
+    <hr />
+
+    <nav id="navBar">
+      <ul>
+        <li><a href="#top">Til toppen</a></li>
+        <li><a href="../../index.html">Prosjekter</a></li>
+        <li><a href="https://github.com/Gunmy">Til github</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <form>
+        <div class="formItem">
+          <label id="passenger_class_output" for="passenger_class"
+            >Passenger class:</label
+          >
+          <input
+            type="range"
+            id="passenger_class"
+            name="passenger_class"
+            value="2"
+            min="1"
+            max="3"
+            class="slider"
+          />
+        </div>
+        <div class="formItem">
+          <label for="sex">Sex:</label>
+          <select id="sex">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+          </select>
+        </div>
+        <div class="formItem">
+          <label id="age_output" for="age">Age: </label>
+          <input
+            type="range"
+            id="age"
+            name="age"
+            value="50"
+            min="0"
+            max="100"
+            class="slider"
+          />
+        </div>
+      </form>
+
+      <div>
+        <p id="survival_chance">Chance of survival: ???%</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
