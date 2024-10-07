@@ -89,6 +89,9 @@ nav > ul > li > a:hover {
 
 section {
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -331,6 +334,13 @@ form {
     gap: 1rem;
     flex-wrap: wrap;
     max-width: 50rem;
+    align-items: center;
+
+    background-color: var(--secondary-bg-color);    
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.5rem var(--shadow);
+    padding: 1rem;
+    align-self: start;
 }
 
 
