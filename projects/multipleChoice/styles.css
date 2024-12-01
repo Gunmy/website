@@ -1,0 +1,152 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  color: #333;
+}
+#quiz-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Question styles */
+.question {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Answer options */
+.answers {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;  /* Stack options vertically */
+  align-items: flex-start;
+  gap: 15px;  /* Space between options */
+}
+
+.answers label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Checkbox appearance */
+.answers input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+/* Styling the label with different background colors for each option */
+.answers span {
+  display: inline-block;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  width: 100%;
+  text-align: left;
+}
+
+/* Background color variations for each option */
+.answers input[type="checkbox"]:nth-child(1) + span {
+  background-color: #f0f8ff;  /* Light Blue */
+}
+
+.answers input[type="checkbox"]:nth-child(2) + span {
+  background-color: #f5f5dc;  /* Beige */
+}
+
+.answers input[type="checkbox"]:nth-child(3) + span {
+  background-color: #e6ffe6;  /* Light Green */
+}
+
+.answers input[type="checkbox"]:nth-child(4) + span {
+  background-color: #fff0f5;  /* Lavender */
+}
+
+/* When the checkbox is checked, apply a background color */
+.answers input[type="checkbox"]:checked + span {
+  background-color: #007BFF;
+  color: white;
+  border-color: #007BFF;
+}
+
+/* Hover effect for unchecked options */
+.answers input[type="checkbox"]:hover + span {
+  background-color: #c1c1c1;
+}
+
+.answers input[type="checkbox"]:checked + span:hover {
+  background-color: #0056b3;
+}
+
+/* Button styles */
+.btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  background-color: #003f8f;
+  transform: scale(0.98);
+}
+
+/* Result styles */
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #007BFF;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  #quiz-container {
+    width: 90%;
+    padding: 20px;
+  }
+  .btn {
+    font-size: 1em;
+  }
+}

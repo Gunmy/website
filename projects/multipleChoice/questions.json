@@ -1,0 +1,804 @@
+[
+    {
+      "question": "Hva er sannsynligheten for feilklassifisering ifølge Gini-urenhet?",
+      "fake": [
+        "Sannsynligheten for feilklassifisering er lik andelen av positive datapunkter.",
+        "Gini-urenhet vurderer alltid at datasettene er perfekte."
+      ],
+      "true": [
+        "Gini-urenhet gir sannsynligheten for feilklassifisering basert på klassedistribusjonen.",
+        "Lav Gini-urenhet betyr at de fleste datapunkter tilhører én klasse."
+      ]
+    },
+    {
+      "question": "Hvilken egenskap har sigmoid-funksjonen i logistisk regresjon?",
+      "fake": [
+        "Den er alltid lineær.",
+        "Den returnerer sannsynligheter mellom -1 og 1."
+      ],
+      "true": [
+        "Den mapper reelle tall til intervallet (0,1).",
+        "Den brukes ofte som en aktiveringsfunksjon i nevrale nettverk."
+      ]
+    },
+    {
+        "question": "Hva er hovedfordelen med logistisk regresjon som en klassifiseringsmodell?",
+        "fake": [
+        "Den fungerer bare på binære variabler.",
+        "Den gir alltid perfekte resultater uten datarensing."
+        ],
+        "true": [
+        "Den kan beregne sannsynligheter for to klasser.",
+        "Den bruker sigmoid-funksjonen for å begrense prediksjonene mellom 0 og 1."
+        ]
+    },
+    {
+        "question": "Hvilken rolle spiller gradient descent i trening av maskinlæringsmodeller?",
+        "fake": [
+        "Det sikrer alltid det globale maksimumet.",
+        "Det brukes til å redusere treningsdatasettet."
+        ],
+        "true": [
+        "Det finner minimum av tapsfunksjonen.",
+        "Det oppdaterer modellens parametere iterativt basert på gradienter."
+        ]
+    },
+    {
+        "question": "Hva er et vanlig problem med å trene en modell på ubalanserte data?",
+        "fake": [
+        "Modellen vil overfitte til den mindre representerte klassen.",
+        "Modellen klarer ikke å konvergere under trening."
+        ],
+        "true": [
+        "Modellen kan favorisere den større klassen.",
+        "Metrikker som treffsikkerhet kan være misvisende."
+        ]
+    },
+    {
+        "question": "Hva er hensikten med MinMaxScaler i preprosessering av data?",
+        "fake": [
+        "Den legger til støy i datasettet.",
+        "Den fjerner dupliserte datapunkter."
+        ],
+        "true": [
+        "Den skalerer data til et definert intervall, ofte [0, 1].",
+        "Den reduserer effekten av forskjellige skalaer på funksjoner."
+        ]
+    },
+    {
+        "question": "Hva er ROC-kurven brukt til i maskinlæring?",
+        "fake": [
+        "For å finne hvor mange datapunkter som mangler i datasettet.",
+        "For å plotte fordelingen av trenings- og testdata."
+        ],
+        "true": [
+        "For å vise sammenhengen mellom TPR og FPR for ulike terskler.",
+        "For å evaluere en klassifiseringsmodells ytelse uavhengig av terskel."
+        ]
+    },
+    
+    {
+        "question": "Hva er et typisk trekk ved Naïve Bayes-modellen?",
+        "fake": [
+        "Den forutsetter at alle klasser har lik sannsynlighet.",
+        "Den krever store treningsdatasett for å fungere."
+        ],
+        "true": [
+        "Den antar at alle funksjoner er uavhengige.",
+        "Den bruker Bayes’ teorem for sannsynlighetsberegning."
+        ]
+    },
+    {
+        "question": "Hva brukes Gini-impurity til i beslutningstrær?",
+        "fake": [
+        "Å beregne sannsynligheten for overfitting.",
+        "Å finne optimale parametere for modellen."
+        ],
+        "true": [
+        "Å måle hvor rene data er etter en splitt.",
+        "Å evaluere splittingkriterier for å bygge trær."
+        ]
+    },
+    {
+        "question": "Hva er en fordel med krysvalidering i maskinlæring?",
+        "fake": [
+        "Det krever ikke deling av data i trenings- og testsett.",
+        "Det reduserer kompleksiteten til modellen."
+        ],
+        "true": [
+        "Det gir en mer pålitelig evaluering av modellens ytelse.",
+        "Det reduserer risikoen for overfitting til spesifikke treningsdata."
+        ]
+    },
+    {
+        "question": "Hva er hovedmålet med Principal Component Analysis (PCA)?",
+        "fake": [
+        "Å øke dimensjonaliteten til dataene.",
+        "Å erstatte alle variabler med tilfeldige verdier."
+        ],
+        "true": [
+        "Å redusere dimensjonaliteten samtidig som mest mulig informasjon beholdes.",
+        "Å finne komponenter som forklarer mest variasjon i dataene."
+        ]
+    },
+    {
+        "question": "Hva representerer en løvnode i et beslutningstre?",
+        "fake": [
+        "En node som alltid splitter dataene videre.",
+        "En node som inneholder alle treningsdata."
+        ],
+        "true": [
+        "En node som gir en predikert verdi.",
+        "En avsluttende node uten flere splittingkriterier."
+        ]
+    },
+
+    
+  {
+    "question": "Hvilken av disse egenskapene må være oppfylt for at et datapunkt skal være en anomali i datasettet?",
+    "fake": [
+      "Datapunktet kan plukkes ut ved hjelp av k-means clustering og persentiler",
+      "Datapunktet markeres som en outlier av DBSCAN",
+      "Datapunktet er rødt når vi visualiserer det"
+    ],
+    "true": [
+      "Datapunktet er langt unna alle klyngesentre"
+    ]
+  },
+  {
+    "question": "Hva er fordelene med å bruke ensemble-metoder som bagging?",
+    "fake": [
+      "Reduserer alltid modellens kompleksitet",
+      "Garanterer høyere presisjon i alle datasett"
+    ],
+    "true": [
+      "Reduserer variansen i modellprediksjoner",
+      "Kombinerer flere svake lærere til en sterk modell"
+    ]
+  },
+  {
+    "question": "Hvilken av disse brukes til å justere modellens ytelse på ubalanserte datasett?",
+    "fake": [
+      "Overføre alle datapunktene til en uniform distribusjon",
+      "Fjerne data fra begge klasser for balanse"
+    ],
+    "true": [
+      "Oversampling av minoritetsklassen",
+      "Vekting av tapsfunksjonen basert på klassedistribusjon"
+    ]
+  },
+  {
+    "question": "Hva er en sannhet om funksjoner i k-means clustering?",
+    "fake": [
+      "K-means kan håndtere variabler som er sterkt avhengige av hverandre.",
+      "K-means fungerer alltid best på ubalanserte datasett."
+    ],
+    "true": [
+      "K-means avhenger av initialisering av klyngesentrene.",
+      "K-means forsøker å minimere avstanden mellom datapunkter og klyngesentre."
+    ]
+  },
+  {
+    "question": "Hva er en vanlig utfordring med gradient descent?",
+    "fake": [
+      "Det garanterer alltid global optimalisering.",
+      "Det kan ikke tilpasses læringsraten under trening."
+    ],
+    "true": [
+      "Det kan sette seg fast i lokale minima.",
+      "Læringsraten må justeres for å unngå konvergeringsproblemer."
+    ]
+  },
+  {
+    "question": "Hvilket av følgende er en fordel med å bruke cross entropy som tapsfunksjon?",
+    "fake": [
+      "Det krever ikke differensierbarhet av modellens parametere.",
+      "Det fungerer bare for uveiledet læring."
+    ],
+    "true": [
+      "Det håndterer sannsynligheter på en intuitiv måte.",
+      "Det belønner høye sannsynligheter for korrekte klasser."
+    ]
+  },
+  {
+    "question": "Hva er nødvendig for å bruke en nevralt nettverk i klassifisering?",
+    "fake": [
+      "Alle funksjoner må være normalisert til heltall.",
+      "Ingen gradientberegninger er nødvendig."
+    ],
+    "true": [
+      "En aktiveringsfunksjon som sigmoid eller ReLU.",
+      "Bakpropagering for å justere vektene."
+    ]
+  },
+  {
+    "question": "Hvilken av disse metodene kan brukes for å redusere dimensjonaliteten i datasettet?",
+    "fake": [
+      "k-means clustering",
+      "Gradient descent"
+    ],
+    "true": [
+      "Principal Component Analysis (PCA)",
+      "t-SNE"
+    ]
+  },
+  {
+    "question": "Hvilken av følgende er en egenskap ved bagging?",
+    "fake": [
+      "Bruker kun én modell til prediksjon.",
+      "Fungerer bare på store datasett."
+    ],
+    "true": [
+      "Kombinerer flere modeller for å redusere variansen.",
+      "Trener modeller på ulike bootstrap-prøver av data."
+    ]
+  },
+  {
+    "question": "Hva er en fordel med boosting i ensemble-metoder?",
+    "fake": [
+      "Øker alltid modellens robusthet mot overfitting.",
+      "Fungerer kun for lineære data."
+    ],
+    "true": [
+      "Fokuserer på feilprediksjoner i tidligere modeller.",
+      "Forbedrer ytelsen ved å kombinere svakere modeller."
+    ]
+  },
+  {
+    "question": "Hva brukes ROC-kurven til?",
+    "fake": [
+      "For å velge den beste hyperparameteren for k-means.",
+      "For å evaluere datafordelingen i uveiledet læring."
+    ],
+    "true": [
+      "For å analysere trade-off mellom TPR og FPR.",
+      "For å evaluere klassifiseringsmodeller over ulike terskler."
+    ]
+  },
+  {
+    "question": "Hva skjer dersom learning rate er for høy i gradient descent?",
+    "fake": [
+      "Modellen konvergerer alltid raskere.",
+      "Gradientene blir konstant null."
+    ],
+    "true": [
+      "Modellen kan hoppe over minimumspunktet.",
+      "Treningen kan bli ustabil."
+    ]
+  },
+  {
+    "question": "Hva er en sannhet om Gini impurity?",
+    "fake": [
+      "Den kan ikke brukes på datasett med mer enn to klasser.",
+      "Den måler maksimal usikkerhet i et datasett."
+    ],
+    "true": [
+      "Den angir sannsynligheten for feilklassifisering.",
+      "Lav Gini impurity tilsier høy klassehomogenitet."
+    ]
+  },
+  {
+    "question": "Hva er et mål for dimensional curse i maskinlæring?",
+    "fake": [
+      "Det gjør modellen mer nøyaktig i høyere dimensjoner.",
+      "Det forbedrer generaliseringen av alle modeller."
+    ],
+    "true": [
+      "Det øker mengden data som kreves for trening.",
+      "Det kan føre til dårlig ytelse på testdata."
+    ]
+  },
+  {
+    "question": "Hva er en typisk egenskap ved ensemble-metoder?",
+    "fake": [
+      "De krever alltid store mengder data.",
+      "De reduserer alltid overfitting."
+    ],
+    "true": [
+      "De kombinerer flere modeller for å forbedre ytelsen.",
+      "De kan redusere varians eller bias avhengig av metoden."
+    ]
+  },
+  {
+    "question": "Hva er hovedforskjellen mellom bagging og boosting?",
+    "fake": [
+      "Boosting bruker tilfeldige prøver av data, mens bagging fokuserer på feil.",
+      "Bagging fungerer bare for regresjonsoppgaver."
+    ],
+    "true": [
+      "Bagging reduserer variansen, mens boosting reduserer bias.",
+      "Boosting bygger på hver modell sekvensielt, mens bagging bygger uavhengig."
+    ]
+  },
+  {
+    "question": "Hva er en nøkkeltilnærming i dimensjonsreduksjon med PCA?",
+    "fake": [
+      "Å finne nye aksler som maksimerer klusterdistansen.",
+      "Å redusere variansen i datasettet."
+    ],
+    "true": [
+      "Å finne nye aksler som maksimerer variansen i dataene.",
+      "Å redusere antall dimensjoner mens informasjon bevares."
+    ]
+  },
+  {
+    "question": "Hva kjennetegner aktiveringsfunksjonen ReLU?",
+    "fake": [
+      "Den mapper alle inputverdier til 0 eller 1.",
+      "Den er alltid lineær."
+    ],
+    "true": [
+      "Den returnerer 0 for negative inputverdier.",
+      "Den er skalerbar for store verdier uten å mettes."
+    ]
+  },
+  {
+    "question": "Hva er en viktig årsak til å bruke kryssvalidering?",
+    "fake": [
+      "Det reduserer datarensingsbehovet.",
+      "Det krever færre data for å trene modellen."
+    ],
+    "true": [
+      "Det gir mer robust evaluering av modellen.",
+      "Det bidrar til å avdekke overfitting."
+    ]
+  },
+  {
+    "question": "Hva er Bayes' teorem sentralt i?",
+    "fake": [
+      "Prediksjon av kontinuerlige variabler i regresjonsmodeller.",
+      "Trening av dype nevrale nettverk."
+    ],
+    "true": [
+      "Estimering av sannsynligheter gitt betingelser.",
+      "Naïve Bayes-algoritmer for klassifisering."
+    ]
+  },
+    {
+      "question": "Hva er en typisk utfordring med å bruke decision trees?",
+      "fake": [
+        "De fungerer kun for kontinuerlige data.",
+        "De kan bare brukes på små datasett."
+      ],
+      "true": [
+        "De kan overtilpasse dataene hvis de er for dype.",
+        "De er sensitive for små endringer i dataene."
+      ]
+    },
+    {
+      "question": "Hva er fordelen med en weighted loss function på ubalanserte datasett?",
+      "fake": [
+        "Den gjør alltid modellen raskere.",
+        "Den reduserer alltid variansen i dataene."
+      ],
+      "true": [
+        "Den gir høyere vekt til feilprediksjoner på minoritetsklassen.",
+        "Den kan forbedre modellens evne til å håndtere sjeldne klasser."
+      ]
+    },
+    {
+      "question": "Hvilket mål brukes i decision trees for å redusere usikkerhet?",
+      "fake": [
+        "ROC AUC",
+        "Precision-Recall"
+      ],
+      "true": [
+        "Entropi",
+        "Gini impurity"
+      ]
+    },
+    {
+      "question": "Hva er en ulempe ved å bruke oversampling på ubalanserte datasett?",
+      "fake": [
+        "Det fører alltid til underfitting.",
+        "Det reduserer modellens evne til å lære minoritetsklasser."
+      ],
+      "true": [
+        "Det kan føre til overfitting på dupliserte datapunkter.",
+        "Det kan forlenge treningstiden."
+      ]
+    },
+    {
+      "question": "Hva er en sannhet om clustering-metoden k-means?",
+      "fake": [
+        "Den finner alltid globale optima.",
+        "Den krever ikke at klyngene er sfæriske."
+      ],
+      "true": [
+        "Den grupperer datapunkter basert på nærhet til klyngesentre.",
+        "Den kan være sensitiv for valg av initiale klyngesentre."
+      ]
+    },
+    {
+      "question": "Hva er hovedformålet med DBSCAN som clustering-metode?",
+      "fake": [
+        "Å minimere antall klynger i datasettet.",
+        "Å kreve like mange datapunkter i hver klynge."
+      ],
+      "true": [
+        "Å identifisere klynger med ulik tetthet.",
+        "Å markere datapunkter som støy hvis de ikke tilhører en klynge."
+      ]
+    },
+    {
+      "question": "Hva er fordelen med å bruke t-SNE for dimensjonsreduksjon?",
+      "fake": [
+        "Den øker dimensjonaliteten i dataene.",
+        "Den fungerer best for numeriske variable uten støy."
+      ],
+      "true": [
+        "Den visualiserer høy-dimensjonale data i lavere dimensjoner.",
+        "Den bevarer lokale strukturer i dataene."
+      ]
+    },
+    {
+      "question": "Hva er en sannhet om anomalideteksjon med Isolation Forest?",
+      "fake": [
+        "Den krever alltid data med lineær sammenheng.",
+        "Den kan kun brukes med balanserte datasett."
+      ],
+      "true": [
+        "Den bruker tilfeldig deling av data for å isolere anomalier.",
+        "Den er effektiv for store datasett."
+      ]
+    },
+    {
+      "question": "Hvilken av disse er en fordel med bagging?",
+      "fake": [
+        "Den øker alltid kompleksiteten i modellen.",
+        "Den gir høy bias i modellprediksjonene."
+      ],
+      "true": [
+        "Den reduserer variansen i prediksjonene.",
+        "Den bruker bootstrap-prøver for robust modelltrening."
+      ]
+    },
+    {
+      "question": "Hva er hovedutfordringen ved å bruke boosting?",
+      "fake": [
+        "Den gir alltid en høy varians i modellen.",
+        "Den krever minst én svake modell med perfeksjon."
+      ],
+      "true": [
+        "Den kan være utsatt for overfitting på små datasett.",
+        "Den bygger på feilene fra tidligere modeller, noe som kan akkumulere."
+      ]
+    },
+    {
+      "question": "Hva brukes precision og recall til i klassifiseringsmodeller?",
+      "fake": [
+        "Å evaluere modellens prediksjoner i kontinuerlige data.",
+        "Å redusere mengden treningsdata."
+      ],
+      "true": [
+        "Å måle modellens evne til å fange opp positive klasser.",
+        "Å evaluere trade-off mellom korrekt klassifisering og falske alarmer."
+      ]
+    },
+    {
+      "question": "Hva er et vanlig problem med overfitting i beslutningstrær?",
+      "fake": [
+        "Modellen fungerer aldri på treningsdata.",
+        "Den reduserer kompleksiteten i treet."
+      ],
+      "true": [
+        "Modellen tilpasser seg for mye til treningsdataene.",
+        "Modellen presterer dårlig på nye, ukjente data."
+      ]
+    },
+    {
+      "question": "Hva er fordelen med å bruke Random Forest i stedet for et enkelt beslutningstre?",
+      "fake": [
+        "Det eliminerer behovet for data preprosessering.",
+        "Det krever færre data for trening."
+      ],
+      "true": [
+        "Det reduserer overfitting ved å kombinere flere trær.",
+        "Det øker robustheten til modellen ved å bruke tilfeldige underprøver av data."
+      ]
+    },
+    {
+      "question": "Hva er en vanlig egenskap ved gradient boost-modeller?",
+      "fake": [
+        "De bruker kun tilfeldige splittingkriterier.",
+        "De eliminerer alltid støy i dataene."
+      ],
+      "true": [
+        "De kombinerer svakere modeller sekvensielt for bedre ytelse.",
+        "De justerer seg basert på feilene fra tidligere modeller."
+      ]
+    },
+    {
+      "question": "Hva skjer dersom en ROC AUC-verdi er nær 0.5?",
+      "fake": [
+        "Modellen har høy treffsikkerhet.",
+        "Modellen overfitter til treningsdataene."
+      ],
+      "true": [
+        "Modellen er ikke bedre enn tilfeldig gjetning.",
+        "Modellen mangler diskrimineringsevne."
+      ]
+    },
+    {
+      "question": "Hva er formålet med å plotte confusion matrix?",
+      "fake": [
+        "Å visualisere alle hyperparametrene i modellen.",
+        "Å evaluere korrelasjonen mellom funksjoner."
+      ],
+      "true": [
+        "Å vise riktig og feil klassifisering i alle klasser.",
+        "Å evaluere hvordan modellen presterer på ulike klasser."
+      ]
+    },
+    {
+      "question": "Hva er hovedformålet med clustering-metoder i maskinlæring?",
+      "fake": [
+        "Å redusere mengden data i datasettet.",
+        "Å finne sannsynligheten for klassifisering."
+      ],
+      "true": [
+        "Å gruppere lignende datapunkter basert på egenskaper.",
+        "Å finne strukturer i umerkede datasett."
+      ]
+    },
+    {
+      "question": "Hva er en ulempe ved å bruke decision trees?",
+      "fake": [
+        "De kan ikke trenes på kontinuerlige data.",
+        "De fungerer kun på små datasett."
+      ],
+      "true": [
+        "De kan være utsatt for overfitting.",
+        "De har ofte høy varians i prediksjoner."
+      ]
+    },
+    {
+      "question": "Hva er en sannhet om feature scaling i maskinlæring?",
+      "fake": [
+        "Det kreves bare for klassifiseringsmodeller.",
+        "Det brukes kun for å fjerne nullverdier i datasettet."
+      ],
+      "true": [
+        "Det gjør at funksjoner på forskjellige skalaer kan sammenlignes.",
+        "Det forbedrer ytelsen til algoritmer som k-means og gradient descent."
+      ]
+    },
+    {
+      "question": "Hva er fordelen med å bruke PCA som en metode for dimensjonsreduksjon?",
+      "fake": [
+        "Den øker alltid mengden data i datasettet.",
+        "Den reduserer variansen i datasettet."
+      ],
+      "true": [
+        "Den finner de viktigste komponentene som forklarer variasjon i dataene.",
+        "Den reduserer kompleksiteten i høy-dimensjonale data."
+      ]
+    },
+    
+        {
+          "question": "Hvilken egenskap er nødvendig for en tapsfunksjon i gradient descent?",
+          "fake": [
+            "Den må alltid være positiv.",
+            "Den må være diskret.",
+            "Den må gi samme verdi for alle datapunkter."
+          ],
+          "true": [
+            "Den må være deriverbar."
+          ]
+        },
+        {
+          "question": "Hva er et viktig kriterium for å velge antall klynger i k-means?",
+          "fake": [
+            "Antallet må være lik antall datapunkter.",
+            "Antallet bestemmes alltid automatisk.",
+            "Antallet bør alltid være et primtall."
+          ],
+          "true": [
+            "Antallet kan velges ved bruk av metoder som Elbow-metoden."
+          ]
+        },
+        {
+          "question": "Hva skjer hvis læringsraten i gradient descent er for lav?",
+          "fake": [
+            "Modellen hopper over det globale minimumet.",
+            "Tapet øker for hver iterasjon.",
+            "Modellen blir mindre generaliserbar."
+          ],
+          "true": [
+            "Treningen tar lengre tid å konvergere."
+          ]
+        },
+        {
+          "question": "Hvilken av følgende brukes til å evaluere en klassifiseringsmodell?",
+          "fake": [
+            "Arealet under precision-kurven (AUP).",
+            "Gradientkurven.",
+            "Loss-plottet."
+          ],
+          "true": [
+            "ROC AUC."
+          ]
+        },
+        {
+          "question": "Hva brukes Random Forest til i maskinlæring?",
+          "fake": [
+            "Å redusere datasettets størrelse.",
+            "Å optimalisere læringsraten.",
+            "Å redusere dimensjonaliteten i dataene."
+          ],
+          "true": [
+            "Å kombinere flere beslutningstrær for bedre prediksjon."
+          ]
+        },
+        {
+          "question": "Hva er en fordel med å bruke standardisering av data?",
+          "fake": [
+            "Den endrer alltid dataenes fordeling til å bli uniform.",
+            "Den fjerner støy fra datasettet.",
+            "Den dobler antall datapunkter i datasettet."
+          ],
+          "true": [
+            "Den setter data til en skala med gjennomsnitt 0 og standardavvik 1."
+          ]
+        },
+        {
+          "question": "Hva er en nøkkelutfordring med clustering?",
+          "fake": [
+            "Det krever alltid merkede data.",
+            "Resultatene er alltid deterministiske.",
+            "Det kan kun brukes for kontinuerlige variabler."
+          ],
+          "true": [
+            "Resultatene kan avhenge av avstandsmål og initialisering."
+          ]
+        },
+        {
+          "question": "Hvilken metode brukes til dimensjonsreduksjon?",
+          "fake": [
+            "Bagging.",
+            "DBSCAN.",
+            "Logistisk regresjon."
+          ],
+          "true": [
+            "Principal Component Analysis (PCA)."
+          ]
+        },
+        {
+          "question": "Hva er en fordel med decision trees?",
+          "fake": [
+            "De krever alltid balanserte datasett.",
+            "De kan ikke håndtere kontinuerlige variabler.",
+            "De krever en fast dybde for å fungere."
+          ],
+          "true": [
+            "De er enkle å tolke og visualisere."
+          ]
+        },
+        {
+          "question": "Hvilken rolle spiller entropi i maskinlæring?",
+          "fake": [
+            "Den brukes til å redusere datastørrelsen.",
+            "Den erstatter tapsfunksjonen i alle klassifiseringsmodeller.",
+            "Den gir alltid en nøyaktig prediksjon."
+          ],
+          "true": [
+            "Den brukes til å måle usikkerhet i datasett."
+          ]
+        },
+        {
+          "question": "Hva er en svakhet ved k-means clustering?",
+          "fake": [
+            "Det kan ikke brukes på høydimensjonale data.",
+            "Det støtter ikke numeriske variabler.",
+            "Det gir alltid samme klynger uavhengig av startverdier."
+          ],
+          "true": [
+            "Det kan bli fanget i lokale minima."
+          ]
+        },
+        {
+          "question": "Hva er viktig for en vellykket prediktiv modell?",
+          "fake": [
+            "Den må være overtilpasset treningsdata.",
+            "Den må ignorere uavhengige variabler.",
+            "Den må ha så mange parametere som mulig."
+          ],
+          "true": [
+            "Den må generalisere godt til nye data."
+          ]
+        },
+        {
+          "question": "Hvilken av disse metodene kan brukes til å håndtere ubalanserte datasett?",
+          "fake": [
+            "Kombinere alle datapunktene i én klasse.",
+            "Øke læringsraten i modellen.",
+            "Ignorere minoritetsklassen helt."
+          ],
+          "true": [
+            "Oversampling av minoritetsklassen."
+          ]
+        },
+        {
+          "question": "Hva er en utfordring med høy-dimensjonale data?",
+          "fake": [
+            "Det øker alltid modellens presisjon.",
+            "Det eliminerer behovet for regularisering.",
+            "Det reduserer variansen i modellen."
+          ],
+          "true": [
+            "Det kan føre til dimensjonsforbannelsen."
+          ]
+        },
+        {
+          "question": "Hva er en viktig egenskap ved decision trees?",
+          "fake": [
+            "De kan bare brukes til regresjon.",
+            "De krever alltid kontinuerlige data.",
+            "De trenger minst 100 funksjoner for å trenes."
+          ],
+          "true": [
+            "De kan brukes til både klassifisering og regresjon."
+          ]
+        },
+        {
+          "question": "Hvilken av disse er en viktig årsak til å bruke ensemble-metoder?",
+          "fake": [
+            "De øker alltid datamengden.",
+            "De reduserer behovet for validering.",
+            "De eliminerer behovet for tuning av hyperparametere."
+          ],
+          "true": [
+            "De kan redusere bias og varians i modellprediksjoner."
+          ]
+        },
+        {
+          "question": "Hva er en fordel med bruk av ROC AUC som evaluering?",
+          "fake": [
+            "Det måler alltid hvor raskt en modell trener.",
+            "Det gir detaljert informasjon om alle datapunkter.",
+            "Det kan kun brukes på uveiledet læring."
+          ],
+          "true": [
+            "Det evaluerer modellen over ulike klassifiseringsterskler."
+          ]
+        },
+        {
+          "question": "Hva er en nøkkelfordel ved å bruke t-SNE for visualisering?",
+          "fake": [
+            "Det gir deterministiske resultater.",
+            "Det fungerer kun på binære datasett.",
+            "Det krever svært små datasett."
+          ],
+          "true": [
+            "Det bevarer lokale strukturer i høy-dimensjonale data."
+          ]
+        },
+        {
+          "question": "Hva er en viktig rolle til en confusion matrix?",
+          "fake": [
+            "Å identifisere hvilke data som må normaliseres.",
+            "Å analysere korrelasjoner mellom variabler.",
+            "Å redusere dimensjonaliteten til dataene."
+          ],
+          "true": [
+            "Å visualisere korrekt og feil klassifisering i ulike klasser."
+          ]
+        },
+        {
+          "question": "Hva er en nøkkelutfordring ved å bruke boosting?",
+          "fake": [
+            "Det gir alltid dårlig ytelse på treningsdata.",
+            "Det fjerner alle feil i datasettet.",
+            "Det krever bare én svake modell."
+          ],
+          "true": [
+            "Det kan føre til overfitting på små datasett."
+          ]
+        }
+      ]
+      
+  
+
+
+    
+
