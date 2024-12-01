@@ -85,6 +85,8 @@ checkAnswerBtn.addEventListener('click', () => {
 
       if (!correctAnswers.includes(answerText)) {
         label.querySelector('span').style.color = 'red';  // Highlight incorrect answers
+      } else {
+        label.querySelector('span').style.color = 'green';
       }
     });
   }
