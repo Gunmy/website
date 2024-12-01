@@ -39,10 +39,12 @@ function loadNewQuestion() {
   shuffledAnswers.forEach((answer, index) => {
     const answerId = `answer-${index}`;
     const answerHTML = `
-      <label>
+    <div class="vbox">
+      <label class="lbox">
         <input type="checkbox" id="${answerId}" value="${answer}">
-        ${answer}
+        <span>${answer}</span>
       </label>
+    </div>
     `;
     answersElement.insertAdjacentHTML('beforeend', answerHTML);
   });
@@ -59,10 +61,35 @@ checkAnswerBtn.addEventListener('click', () => {
     selectedAnswers.length === correctAnswers.length &&
     selectedAnswers.every((answer) => correctAnswers.includes(answer));
 
-  resultElement.textContent = isCorrect
-    ? 'Correct! 🎉'
-    : `Incorrect. Correct answers are: ${correctAnswers.join(', ')}`;
+  // Show the result
+  if (isCorrect) {
+    resultElement.textContent = 'Correct! 🎉';
+    resultElement.style.color = 'green'; // Correct answer text in green
+  } else {
+    resultElement.textContent = 'Incorrect. Correct answers are:';
+    resultElement.style.color = 'red';  // Set text color to red for incorrect answers
+    
+    // Create the list for correct answers
+    const ul = document.createElement('ul');
+    correctAnswers.forEach((answer) => {
+      const li = document.createElement('li');
+      li.textContent = answer;
+      ul.appendChild(li);
+    });
+    resultElement.appendChild(ul);
 
+    // Highlight incorrect answers in red
+    Array.from(answersElement.querySelectorAll('input[type="checkbox"]')).forEach((input) => {
+      const label = input.parentElement;
+      const answerText = label.querySelector('span').textContent;
+
+      if (!correctAnswers.includes(answerText)) {
+        label.querySelector('span').style.color = 'red';  // Highlight incorrect answers
+      }
+    });
+  }
+
+  // Hide the check answer button and show the next question button
   checkAnswerBtn.style.display = 'none';
   nextQuestionBtn.style.display = 'block';
 });

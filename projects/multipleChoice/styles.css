@@ -19,7 +19,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 400px;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
-  text-align: center;
+  text-align: left;
 }
 
 /* Answer options */
@@ -76,11 +76,6 @@ body {
   text-align: left;
 }
 
-/* Background color variations for each option */
-.answers input[type="checkbox"]:nth-child(1) + span {
-  background-color: #f0f8ff;  /* Light Blue */
-}
-
 .answers input[type="checkbox"]:nth-child(2) + span {
   background-color: #f5f5dc;  /* Beige */
 }
@@ -93,21 +88,6 @@ body {
   background-color: #fff0f5;  /* Lavender */
 }
 
-/* When the checkbox is checked, apply a background color */
-.answers input[type="checkbox"]:checked + span {
-  background-color: #007BFF;
-  color: white;
-  border-color: #007BFF;
-}
-
-/* Hover effect for unchecked options */
-.answers input[type="checkbox"]:hover + span {
-  background-color: #c1c1c1;
-}
-
-.answers input[type="checkbox"]:checked + span:hover {
-  background-color: #0056b3;
-}
 
 /* Button styles */
 .btn {
@@ -121,6 +101,23 @@ body {
   transition: background-color 0.3s, transform 0.1s;
   margin-top: 10px;
   width: 100%;
+}
+
+.vbox {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.vbox:hover {
+  background-color: #d2e8ff;
+
+}
+
+.lbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .btn:hover {
@@ -150,3 +147,5 @@ body {
     font-size: 1em;
   }
 }
+
+
