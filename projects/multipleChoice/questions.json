@@ -1115,8 +1115,262 @@
 "question": "Hva er forskjellen mellom precision og recall?",
 "fake": ["Precision evaluerer andel riktige prediksjoner.", "Recall er bedre ved ubalanserte data.", "Precision evaluerer totale klassifiseringsfeil."],
 "true": ["Recall evaluerer andel relevante resultater."]
-}
-]
+},
+    {
+      "question": "Hva er hovedmålet med explainable AI (XAI)?",
+      "fake": ["Forbedre nøyaktigheten til en modell", "Redusere beregningstid", "Øke antall parametere i en modell"],
+      "true": ["Øke forståelsen av hvordan en modell tar avgjørelser"]
+    },
+    {
+      "question": "Hva er en vanlig utfordring med explainable AI?",
+      "fake": ["Manglende datasett", "Høy kostnad ved utvikling", "Overfitting på treningsdata"],
+      "true": ["Konflikt mellom forklarbarhet og modellens nøyaktighet"]
+    },
+    {
+      "question": "Hvilken metode brukes ofte for å forklare beslutningene til komplekse modeller?",
+      "fake": ["SGD (Stochastic Gradient Descent)", "Backpropagation", "Batch Normalization"],
+      "true": ["LIME (Local Interpretable Model-agnostic Explanations)"]
+    },
+    {
+      "question": "Hvilken type læring tilhører Q-learning?",
+      "fake": ["Veiledet læring", "Uveiledet læring", "Selv-supervisert læring"],
+      "true": ["Forsterket læring"]
+    },
+    {
+      "question": "Hva representerer \"Q\" i Q-learning?",
+      "fake": ["Quantity of data", "Quantum states", "Question-driven exploration"],
+      "true": ["Quality of actions"]
+    },
+    {
+      "question": "Hva er hovedformålet med en Q-tabell i Q-learning?",
+      "fake": ["Å lagre alle mulige datasett", "Å visualisere modelleringsresultater", "Å beregne grad av overfitting"],
+      "true": ["Å estimere handlingenes verdi i en gitt tilstand"]
+    },
+    {
+      "question": "Hvilken lovgivning regulerer bruken av AI i EU?",
+      "fake": ["GDPR", "Data Protection Act", "Digital Services Act"],
+      "true": ["AI Act"]
+    },
+    {
+      "question": "Hva er en kjerneidé i AI Act?",
+      "fake": ["Forbud mot alle former for AI", "Obligatorisk bruk av AI i offentlig sektor", "Subsidiering av AI-forskning"],
+      "true": ["Risikobasert tilnærming til AI-regulering"]
+    },
+    {
+      "question": "Hvilket nivå av risiko vurderes i AI Act?",
+      "fake": ["Lav, middels og høy risiko", "Godkjent og ikke-godkjent", "Sikker og usikker AI"],
+      "true": ["Minimal, begrenset, høy og uakseptabel risiko"]
+    },
+    {
+      "question": "Hvordan defineres explainable AI?",
+      "fake": ["AI som maksimerer ytelse uten hensyn til forståelighet", "AI som bruker heuristiske metoder", "AI som bruker minimalt med ressurser"],
+      "true": ["AI som produserer forklaringer på sine beslutninger"]
+    },
+        {
+          "question": "Hvilket av følgende er et eksempel på en forklarbar modell?",
+          "fake": ["Nevrale nettverk", "Random Forests", "Generative Adversarial Networks (GANs)"],
+          "true": ["Lineær regresjon"]
+        },
+        {
+          "question": "Hvilken metode brukes ofte for å visualisere modellenes beslutningsprosess?",
+          "fake": ["LSTM (Long Short-Term Memory)", "Dropout", "Regularisering"],
+          "true": ["SHAP (Shapley Additive Explanations)"]
+        },
+        {
+          "question": "Hvilken læringsstrategi benytter Q-learning?",
+          "fake": ["Reduksjon av tap", "Klustering", "Klassifisering"],
+          "true": ["Belønningsmaksimering"]
+        },
+        {
+          "question": "Hva er en kritisk komponent i Q-learning?",
+          "fake": ["Hyperparameter-justering", "Datakoding", "Cross-validation"],
+          "true": ["Discount-faktor (γ)"]
+        },
+        {
+          "question": "Hva betyr discount-faktoren (γ) i Q-learning?",
+          "fake": ["Hastigheten til algoritmen", "Nøyaktigheten til modellen", "Modellenes kompleksitet"],
+          "true": ["Hvor mye fremtidige belønninger verdsettes"]
+        },
+        {
+          "question": "Hvilket prinsipp driver explainable AI?",
+          "fake": ["Maksimer ytelse, uansett kompleksitet", "Reduksjon av treningskostnader", "Ubegrenset datatilgang"],
+          "true": ["Etisk og gjennomsiktig beslutningstaking"]
+        },
+        {
+          "question": "Hva betyr begrepet \"high-risk AI systemer\" i AI Act?",
+          "fake": ["Systemer som alltid feiler", "AI med høy beregningskostnad", "Systemer som er umulige å forklare"],
+          "true": ["AI som kan påvirke enkeltpersoners rettigheter eller sikkerhet"]
+        },
+        {
+          "question": "Hva er en fordel med explainable AI?",
+          "fake": ["Bedre modellnøyaktighet", "Mindre datakrav", "Kortere treningstid"],
+          "true": ["Økt brukertillit og aksept"]
+        },
+        {
+          "question": "I forsterket læring, hva er \"policy\"?",
+          "fake": ["En evaluering av treningsdatasett", "En tapsfunksjon", "En teknikk for klustering"],
+          "true": ["En regel for hvordan handlinger utføres"]
+        },
+        {
+          "question": "Hvordan evalueres en policy i Q-learning?",
+          "fake": ["Ved å bruke F1-score", "Gjennom regresjonsanalyser", "Ved å analysere tapshistorikk"],
+          "true": ["Basert på handlingenes samlede forventede belønning"]
+        },
+        {
+          "question": "Hva er formålet med AI Act?",
+          "fake": ["Å forby all uveiledet læring", "Å eliminere bruken av store datasett", "Å tvinge alle til å bruke AI"],
+          "true": ["Å balansere innovasjon og regulering i AI"]
+        },
+        {
+          "question": "Hvilket av følgende er ikke en teknikk for explainable AI?",
+          "fake": ["LIME", "SHAP", "Decision Trees"],
+          "true": ["Hyperparameter-optimalisering"]
+        },
+        {
+          "question": "Hva er en viktig begrensning i explainable AI?",
+          "fake": ["Utilgjengelige treningsdata", "Mangel på datasett", "Redusert treningshastighet"],
+          "true": ["Begrenset forklarbarhet for svært komplekse modeller"]
+        },
+        {
+          "question": "Hva er den viktigste fordelen med Q-learning?",
+          "fake": ["Det krever mindre data", "Det trenger ikke belønningssystemer", "Det unngår all form for overfitting"],
+          "true": ["Det krever ingen modell for miljøet"]
+        },
+        {
+          "question": "Hvilken rolle spiller målemetrikker i explainable AI?",
+          "fake": ["Optimalisere modellens kompleksitet", "Redusere ressursbruk", "Tilpasse algoritmens arkitektur"],
+          "true": ["Evaluere ytelsen på en forståelig måte"]
+        },
+        {
+          "question": "Hva innebærer \"policy iteration\" i Q-learning?",
+          "fake": ["Å iterere over ulike treningsdatasett", "Å endre modellens arkitektur", "Å redusere kompleksiteten i policy"],
+          "true": ["Å oppdatere policy basert på forventede belønninger"]
+        },
+        {
+          "question": "Hva er hovedårsaken til AI Act?",
+          "fake": ["For å begrense innovasjon innen AI", "For å redusere kostnader ved AI-utvikling", "For å forby maskinlæringsmodeller"],
+          "true": ["For å unngå uregulert bruk av AI"]
+        },
+        {
+          "question": "Hvilket av følgende systemer klassifiseres som uakseptabel risiko i AI Act?",
+          "fake": ["Anbefalingssystemer", "Maskinoversettelsessystemer", "Spillestrategier"],
+          "true": ["Sosiale scoring-systemer"]
+        },
+        {
+          "question": "Hva er hovedutfordringen ved uetisk bruk av AI?",
+          "fake": ["Lav forklarbarhet", "Forhøyede treningskostnader", "Manglende innovasjon"],
+          "true": ["Skader på individers rettigheter"]
+        },
+        {
+          "question": "Hvordan kan explainable AI hjelpe organisasjoner?",
+          "fake": ["Ved å redusere modellens kompleksitet", "Ved å fjerne krav til databehandling", "Ved å øke antall parametere i modellen"],
+          "true": ["Ved å styrke tilliten til beslutningene som tas av AI"]
+        },
+            {
+              "question": "Hva er et eksempel på en forklaringsmetode som er modell-agnostisk?",
+              "fake": ["Logistisk regresjon", "Nevrale nettverk", "Support Vector Machines (SVM)"],
+              "true": ["SHAP"]
+            },
+            {
+              "question": "Hva er hovedmålet med discount-faktoren i Q-learning?",
+              "fake": ["Å redusere modellens kompleksitet", "Å øke prediksjonspresisjonen", "Å optimalisere hyperparametere"],
+              "true": ["Å balansere nåværende og fremtidige belønninger"]
+            },
+            {
+              "question": "Hvordan skiller explainable AI seg fra tradisjonell AI?",
+              "fake": ["Fokus på ytelse fremfor gjennomsiktighet", "Reduksjon av datasettets størrelse", "Økt kompleksitet i modellene"],
+              "true": ["Fokus på forståelige forklaringer"]
+            },
+            {
+              "question": "Hva er en vanlig metode for å visualisere policy i Q-learning?",
+              "fake": ["ROC-kurver", "Gradient descent-plott", "Scatterplots"],
+              "true": ["Heatmaps av Q-tabeller"]
+            },
+            {
+              "question": "Hvilken risiko vurderes som akseptabel i AI Act?",
+              "fake": ["Uakseptabel risiko", "Høy risiko", "Kritisk risiko"],
+              "true": ["Begrenset risiko"]
+            },
+            {
+              "question": "Hvilket element er ikke relevant for forklarbar AI?",
+              "fake": ["Transparens", "Tilgjengelighet av data", "Presisjon av forklaringer"],
+              "true": ["Overfitting"]
+            },
+            {
+              "question": "Hvordan trenes Q-learning?",
+              "fake": ["Ved optimalisering av en tapsfunksjon", "Ved krysstrening med andre modeller", "Ved å bruke veiledet læring"],
+              "true": ["Ved iterativ oppdatering av Q-tabellen basert på belønning"]
+            },
+            {
+              "question": "Hva er en viktig komponent i AI Act?",
+              "fake": ["Forbud mot all AI som bruker maskinlæring", "Obligatorisk bruk av spesifikke algoritmer", "Subsidiering av AI-forskning"],
+              "true": ["Risikobasert klassifisering av AI-applikasjoner"]
+            },
+            {
+              "question": "Hvilken av følgende metoder bidrar til explainable AI?",
+              "fake": ["Bagging", "Boosting", "Dropout"],
+              "true": ["Feature importance-plott"]
+            },
+            {
+              "question": "Hva er formålet med reward-funksjonen i Q-learning?",
+              "fake": ["Å optimalisere modellen direkte", "Å forklare modellens beslutninger", "Å evaluere datasettets egenskaper"],
+              "true": ["Å gi umiddelbar tilbakemelding på en handling"]
+            },
+            {
+              "question": "Hvordan definerer AI Act \"høy risiko\"-systemer?",
+              "fake": ["AI-systemer som er dyre å trene", "Alle AI-systemer som bruker dype nevrale nettverk", "Systemer som krever manuell overvåking"],
+              "true": ["Systemer som kan påvirke folks sikkerhet eller rettigheter negativt"]
+            },
+            {
+              "question": "Hva er en viktig fordel med explainable AI i helsevesenet?",
+              "fake": ["Redusert kostnad for modellutvikling", "Mindre databehov", "Hurtigere modelltrening"],
+              "true": ["Bedre forståelse av beslutningsprosessen for pasientdiagnose"]
+            },
+            {
+              "question": "Hva representerer handlingene i Q-learning?",
+              "fake": ["Resultater av en prediksjon", "Variabler i treningsdata", "Parametere i modellen"],
+              "true": ["Alternativer som kan velges i en gitt tilstand"]
+            },
+            {
+              "question": "Hvilken av følgende metoder øker forklarbarheten i komplekse modeller?",
+              "fake": ["Dropout", "Regularisering", "Batch Normalization"],
+              "true": ["LIME"]
+            },
+            {
+              "question": "Hva er en kritisk utfordring i Q-learning?",
+              "fake": ["Begrensede datasett", "Utilgjengelighet av Q-tabellen", "Overdrevet forklarbarhet"],
+              "true": ["Balansere eksplorasjon og utnyttelse"]
+            },
+            {
+              "question": "Hvordan kan explainable AI bidra til juridisk etterlevelse?",
+              "fake": ["Ved å redusere utviklingskostnader", "Ved å øke modellens kompleksitet", "Ved å unngå bruk av sensitive data"],
+              "true": ["Ved å gi gjennomsiktige forklaringer som kan granskes"]
+            },
+            {
+              "question": "Hva er en hovedutfordring i utviklingen av explainable AI?",
+              "fake": ["Redusert modellens ytelse", "Økte krav til datasettstørrelse", "Begrensninger på hardware"],
+              "true": ["Forklaringer som er for komplekse for sluttbrukere"]
+            },
+            {
+              "question": "Hva gjør Q-learning modell-fri?",
+              "fake": ["Den bruker ikke treningsdata", "Den krever ingen tapsfunksjon", "Den eliminerer alle parametere"],
+              "true": ["Den trenger ikke en eksplisitt modell av miljøet"]
+            },
+            {
+              "question": "Hvordan klassifiserer AI Act sosiale scoring-systemer?",
+              "fake": ["Begrenset risiko", "Høy risiko", "Ingen risiko"],
+              "true": ["Uakseptabel risiko"]
+            },
+            {
+              "question": "Hvilken rolle spiller explainable AI i offentlige beslutninger?",
+              "fake": ["Reduserer kompleksiteten i offentlige systemer", "Optimaliserer offentlige budsjetter", "Øker automatiseringshastigheten"],
+              "true": ["Gir tillit og forståelse i sensitive beslutningsprosesser"]
+            }
+          ]
+          
+      
+  
+
 
 
 
