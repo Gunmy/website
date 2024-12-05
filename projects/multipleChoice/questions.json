@@ -1365,7 +1365,40 @@
               "question": "Hvilken rolle spiller explainable AI i offentlige beslutninger?",
               "fake": ["Reduserer kompleksiteten i offentlige systemer", "Optimaliserer offentlige budsjetter", "Øker automatiseringshastigheten"],
               "true": ["Gir tillit og forståelse i sensitive beslutningsprosesser"]
-            }
+            },
+            {
+                "question": "Which of the following statements about Linear Regression in machine learning are correct? Select all that apply.",
+                "fake": [
+                  "Linear Regression inherently performs feature selection and will remove irrelevant predictors automatically.",
+                  "Linear Regression requires that residuals are normally distributed for the model to be valid.",
+                  "Linear Regression is unaffected by outliers, making it a robust modeling technique.",
+                  "Linear Regression requires all predictor variables to be standardized or normalized.",
+                  "Linear Regression is suitable only for time-series data and cannot be applied to cross-sectional data.",
+                  "In Linear Regression, adding more predictors always increases the predictive accuracy on unseen data."
+                ],
+                "true": [
+                  "Linear Regression assumes a linear relationship between the independent variables and the dependent variable.",
+                  "Ordinary Least Squares (OLS) Linear Regression estimates coefficients by minimizing the sum of squared residuals.",
+                  "Linear Regression can be extended to handle polynomial relationships by adding transformed features, such as squared or interaction terms.",
+                  "Multicollinearity among predictors can cause instability in the coefficient estimates of a Linear Regression model.",
+                  "Including too many correlated variables in Linear Regression can lead to overfitting.",
+                  "Linear Regression can be solved analytically when using the closed-form solution of the normal equations.",
+                  "Gradient Descent is an alternative method to find the coefficients of a Linear Regression model, especially when the number of features is large.",
+                  "Linear Regression models the conditional expectation of the response variable given the predictors as a linear function.",
+                  "Linear Regression typically assumes that variance of the residuals is constant (homoscedasticity).",
+                  "The R-squared metric is commonly used to measure how well a Linear Regression model fits the data.",
+                  "Regularization methods like Ridge or Lasso can be applied to Linear Regression to address overfitting.",
+                  "Linear Regression can output negative coefficient values even if all observed data points are positive.",
+                  "One common assumption in Linear Regression is the independence of residuals.",
+                  "Linear Regression can handle both continuous and categorical predictors (after encoding categorical variables).",
+                  "Linear Regression is the simplest form of supervised machine learning used for regression tasks.",
+                  "Gradient-based optimization methods for Linear Regression require differentiability of the loss function.",
+                  "Linear Regression provides confidence intervals for the estimated regression coefficients under certain statistical assumptions.",
+                  "If the relationship between predictors and response is nonlinear, applying Linear Regression directly may result in a poor fit.",
+                  "Linear Regression coefficients can be interpreted as the expected change in the response variable for a one-unit change in the predictor, holding other predictors constant."
+                ]
+              }
+              
           ]
           
       
