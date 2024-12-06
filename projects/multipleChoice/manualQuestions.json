@@ -135,7 +135,7 @@
 
     {
         "question": "Hvilke akser har vi i ROC graf?",
-        "fake": ["PPV", "FPR", "FFF", "FFR"
+        "fake": ["PPV", "FFF", "FFR"
         ],
         "true": ["TPR", "FPR"
         ]
