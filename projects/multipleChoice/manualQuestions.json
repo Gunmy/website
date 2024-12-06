@@ -1,0 +1,158 @@
+[
+    {
+        "question": "Hvem sa 'Machine learning in the field of study that gives computers the ability to learn without being explicitly programmed'",
+        "fake": ["Tom Mitchell", "Alan Turing", "Inga Strumke"
+        ],
+        "true": ["Arthur Samuel"
+        ]
+    },
+    {
+        "question": "Hvem sa 'A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E'",
+        "fake": ["Alan Turing", "Inga Strumke", "Arthur Samuel"
+        ],
+        "true": ["Tom Mitchell"
+        ]
+    },
+    {
+        "question": "Hvilke oppgaver består dataanalyse av av?",
+        "fake": ["Ingen av dem"
+        ],
+        "true": ["Samle data", "Inspisere data", "Renske data", "Transformere data", "Modellere data", "Gjøre estimater", "Støtte/Ta beslutninger"
+        ]
+    },
+    {
+        "question": "Hvilke hoved-læringsformer har vi?",
+        "fake": ["Lærete læring", "Nevral læring", "Self Supervised Læring"
+        ],
+        "true": ["Veiledet læring", "Uveiledet læring", "Reinforcement læring"
+        ]
+    },
+    {
+        "question": "Hva er optimaliseringskriteriet til: Veiledet læring",
+        "fake": ["Generisk, ofte relatert til mål på informasjon, som entropi", "Mål på forventet suksess over tid, gitt atferd"
+        ],
+        "true": ["Mål på avstand mellom riktig svar og modellens prediksjon"
+        ]
+    },
+    {
+        "question": "Hva er optimaliseringskriteriet til: Uveiledet læring",
+        "fake": ["Mål på avstand mellom riktig svar og modellens prediksjon", "Mål på forventet suksess over tid, gitt atferd"
+        ],
+        "true": ["Generisk, ofte relatert til mål på informasjon, som entropi"
+        ]
+    },
+    {
+        "question": "Typiske eksempler på veildet lærings-oppgaver",
+        "fake": ["Clustering", "SSL", "Dyp Q læring", "Q læring"
+        ],
+        "true": ["Klassifisering", "Regresjon"
+        ]
+    },
+    {
+        "question": "Hvilke typer features har vi?",
+        "fake": ["Ingen av dem"
+        ],
+        "true": ["Kvalitative", "Kvantitative", "Kategoriske", "Numeriske", "Diskrete", "Kontinuerlige"
+        ]
+    },
+    {
+        "question": "Andre ord for datapunkt?",
+        "fake": ["Kolonne", "Feature", "Prikk", "Variabel"
+        ],
+        "true": ["Rad"
+        ]
+    },
+    {
+        "question": "Hva er target?",
+        "fake": ["Det som er i midten av en dart-blink"
+        ],
+        "true": ["Kolonnen som angir funksjonsverdien for det aktuelle datapunktet"
+        ]
+    },
+    {
+        "question": "Hva består SSL av?",
+        "fake": ["Ingen av alternativene"
+        ],
+        "true": ["Pretext-task", "Fine-tuning", "Reinforcement learning"
+        ]
+    },
+    {
+        "question": "Typiske aktiveringsfunksjoner?",
+        "fake": [
+        ],
+        "true": ["Sigmoid", "Heavyside", "SoftMax", "ReLU", "Tanh"
+        ]
+    },
+    {
+        "question": "Formel til sigmoid (aktiveringsfunksjonen)?",
+        "fake": ["(e^x-e^(-x)) / (e^x + e^(-x))", "max(0, x)", "0 når x < 0, 1 ellers", "e^x_i / ∑e^x_j"
+        ],
+        "true": ["1 / (1+e^(-x))"
+        ]
+    },
+    {
+        "question": "Tapsfunksjoner",
+        "fake": ["Kullback-Leibner (KL) divergence: 1/2N * ∑(y_i-y_pred_i)^2", "MSE: ∑P(x) * log(P(x) / Q(x))"
+        ],
+        "true": ["Log-likelihood: y*ln(y_pred)+(1-y)*ln(1-y_pred)", "Cross-entropy loss: -y*ln(y_pred)-(1-y)*ln(1-y_pred)", "Log loss: -y*ln(y_pred)-(1-y)*ln(1-y_pred)", "Cross entropy loss: -∑y_i*log(y_pred_i)"
+        ]
+    },
+    {
+        "question": "Anta at vi bruker t-SNE. Hvilken av fordelingene følger t-student fordelingen i KL divergensen ∑P(x) * log(P(x) / Q(x))?",
+        "fake": ["P(x)"
+        ],
+        "true": ["Q(x)"
+        ]
+    },
+    {
+        "question": "Hvorfor bruker en av fordelingene student-t i t-SNE?",
+        "fake": ["Gauss tar mer beregningskapasitet", "Gauss har høy topp"
+        ],
+        "true": ["Unngå for like sannsynligheter for naboene", "Gauss gir for lite sannsynlighet til halen sin"
+        ]
+    },
+    {
+        "question": "Formel for true positive rate? (TPR eller Recall)",
+        "fake": ["TN/N", "TN/(TN+FP)", "FP/N", "FP/(FP+TN)", "TP/(TP+FP)"
+        ],
+        "true": ["TP/P", "TP/(TP+FN)"
+        ]
+    },
+    {
+        "question": "Formel for false positive rate? (FPR)",
+        "fake": ["TP/P", "TP/(TP+FN)", "TN/N", "TN/(TN+FP)", "TP/(TP+FP)"
+        ],
+        "true": ["FP/N", "FP/(FP+TN)"
+        ]
+    },
+    {
+        "question": "Formel for Positive predictive Value? (PPV eller Precision)",
+        "fake": ["TN/N", "TN/(TN+FP)", "FP/N", "FP/(FP+TN)"
+        ],
+        "true": ["TP/(TP+FP)"
+        ]
+    },
+
+    {
+        "question": "Hvilke akser har vi i ROC graf?",
+        "fake": ["PPV", "FPR", "FFF", "FFR"
+        ],
+        "true": ["TPR", "FPR"
+        ]
+    },
+
+    {
+        "question": "Hvilke kjente tradeoffs har vi?",
+        "fake": ["Høy vs. lavt antall dimensjoner"
+        ],
+        "true": ["Precision vs. recall", "Varians vs. bias", "Overfitting vs. underfitting", "lav vs. høy k i kfold cross validation"]
+    },
+
+    {
+        "question": "Hva er rommet vi beveger oss rundt i når vi gjør gradient descent i boosting?",
+        "fake": ["Parameterrommet", "-(label-prediction) rommet", "presudorisidual-rommet"
+        ],
+        "true": ["Rommet over alle mulige trær ensemblet kan bestå av"
+        ]
+    }
+]

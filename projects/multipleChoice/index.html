@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Dynamic Buttons</title>
+    <link rel="stylesheet" href="indexStyle.css" />
   </head>
   <body>
-    <div id="quiz-container">
-      <div id="question" class="question"></div>
-      <div id="answers" class="answers"></div>
-      <button id="check-answer-btn" class="btn">Check Answer</button>
-      <div id="result" class="result"></div>
-      <button id="next-question-btn" class="btn" style="display: none">
-        Next Question
-      </button>
+    <div class="container">
+      <h1>Multiple choice for ML</h1>
+      <p>Select the question type you want:</p>
+      <div class="button-grid" id="buttonGrid">
+        <!-- Buttons will be dynamically inserted here -->
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+      // JavaScript to dynamically generate buttons
+      const buttonData = [
+        { label: "GPT made", link: "multipleChoice.html?type=gptQuestions" },
+        {
+          label: "Human made",
+          link: "multipleChoice.html?type=manualQuestions",
+        },
+        // Add more button objects as needed
+      ];
+
+      const buttonGrid = document.getElementById("buttonGrid");
+      buttonData.forEach((button) => {
+        const btn = document.createElement("a");
+        btn.href = button.link;
+        btn.className = "button";
+        btn.textContent = button.label;
+        buttonGrid.appendChild(btn);
+      });
+    </script>
   </body>
 </html>

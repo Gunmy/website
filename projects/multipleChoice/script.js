@@ -1,10 +1,13 @@
+const params = new URLSearchParams(window.location.search);
+const type = params.get('type') + ".json";
+
 // Variables
 let questions = [];
 let currentQuestionIndex = null;
 let currentQuestion = null;
 
 // Fetch questions from the JSON file
-fetch('questions.json')
+fetch(type)
   .then((response) => response.json())
   .then((data) => {
     questions = data;
